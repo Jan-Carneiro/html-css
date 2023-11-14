@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelement</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: orange;
+            background-color: rgba(255, 255, 0, 0.712);
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial::before{
+            content: ' ➝ ';
+            
+        }
+        .especial::after{
+            content: ' 🠔 ';
+        }
+    </style>
+</head>
+<body>
+    <h1>PERSONALIZANDO LINKS</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank" >Repositório Github</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.estudonauta.com/">Site do Estudonauta</a></li>
+    </ul>
+    
+</body>
+</html>

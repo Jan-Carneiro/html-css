@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colocando Áudio</title>
+</head>
+<body>
+    <h1>REPRODUZINDO ÁUDIO</h1>
+    <p>VAMOS APRENDER A REPRODUZIR ÁUDIO EM HTML5</p>
+    <audio src="audio/Gully Dreams - Hanu Dixit.mp3" controls autoplay></audio>
+
+    <audio src="audio/Gully Dreams - Hanu Dixit.mp3" type="audio/mpeg">
+    </audio>
+    <br>
+    <audio preload="auto" autoplay controls loop> <!--preload metadata: faz um download antecipado para depois começar, o auto faz todo o download primeiro. Têm navegadores que não funcionam somente com o autoplay, precisando do controls. O loop fica gerando loop -->
+        <source src="audio/Society's Dream - Mini Vandals.mp3" type="audio/mpeg"> <!--vai ler primeiro esse, se nao der, vai para os outros. Se não ler nenhum, ele irá para o parágrafo, podendo fazer o download pelo link-->
+        <source src="audio/Society's Dream - Mini Vandals.ogg" type="audio/ogg">
+        <source src="audio/Society's Dream - Mini Vandals.wav" type="audio/wav">
+        <p>Seu navegado não consegue baixar o áudio. Clique <a href="@">aqui</a> para baixar </p>
+    </audio>
+
+</body>
+</html>

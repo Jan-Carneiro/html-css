@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>ACESSANDO O SITE EM MÚLTIPLOS DISPOSITIVOS (IMAGENS DINÂMICAS)</h1>
+    <P>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador </P>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/img_peq.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/img_med.png" type="image/png">
+        <img src="imagens/img_gra.png" alt="imagem_flexivel">
+    </picture>
+    <br>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/logo_peq.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/logo_med.png" type="image/png">
+        <img src="imagens/logo_gra.png" alt="logo_flexivel">
+    </picture>
+</body>
+</html>
