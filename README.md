@@ -1,3 +1,3 @@
 # html-css
- Curso html-css professor Gustavo Guanabara
-GitHUb
+ Curso Html5-CSS3 com o professor Gustavo Guanabara. Site: www.estudonauta.com.br
+
